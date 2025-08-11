@@ -1,58 +1,130 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import {View, Text, StyleSheet} from 'react-native'
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.box1}></View>
-      <Text style={styles.tituloPrincipal}>Título principal</Text>
-      <Text style={styles.subTitulo}>Subtítulo</Text>
-      <Text>Este é um paragrafo</Text>
-      <Text style={styles.saibaMais}>Saiba mais</Text>
-       <View style={styles.box2}></View>
-       <View style={styles.box3}></View>
-      
-      <StatusBar style="auto" />
+return (
+  <View style={styles.container}>
+    <View style={styles.header}>
+      <Text>LOGO</Text>
+
+  <View style={styles.menu}></View>
+  </View>
+
+  <View style={styles.content}>
+    <Text>Box2</Text>
+
+  <View style={styles.content2}></View>
+
+
+
+
+
+
+    <View style={styles.card1}>
+      <Text>Card1</Text>
+
+      <View style={styles.minicard1}>
+        <Text>mini card</Text>
+      </View>
+
     </View>
-  );
+    
+   <View style={styles.card2}>
+      <Text>Card2</Text>
+    </View>
+    
+
+
+
+
+
+
+
+    </View>
+
+
+
+
+
+
+
+
+
+
+
+  </View>
+
+
+)
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  tituloPrincipal: {
-    fontSize: '20px',
-    fontWeight: 'bold'
-  },
-  subTitulo: {
-    fontSize:'18px',
-    fontWeight: 'bold',
-    marginVertical: 20
-  },
-  saibaMais: {
-    fontSize: '14px',
-    color: "#464646"
+const styles = StyleSheet.create ({
+container: {
 
-  },
-  box1: {
-    display: "flex",
-    width: "100%",
-    height: 100,
-    backgroundColor: "456478",
-    justifyContent: "space-between"
-  },
-  box2: {
-    width: "100%",
-    height: 80,
-    backgroundColor: "456478"
-  },
-    box3: {
-    width: 50,
-    height: 50,
-    backgroundColor: "456478"
-  }
-});
+flex: 2,
+backgroundColor: "#b0e982ff",
+justifyContent: "center",
+alignItems: "center"
+},
+
+
+header: {
+flex: 1,
+width: "100%",
+backgroundColor: "#d4d087ff",
+justifyContent: "space-between",
+alignItems:"center",
+flexDirection: "row",
+paddingHorizontal: 20
+},
+
+
+content: {
+flex: 7,
+width: "100%",
+backgroundColor: "#8298e9ff",
+},
+
+menu: {
+  width: 40,
+  height: 40,
+  backgroundColor: "#050505ff"
+},
+
+card1: {
+  
+  width: "100%",
+  height: 200,
+  alignItems:"center",
+  backgroundColor: "#ffffff",
+  margin: 50,
+  justifyContent: "center",
+
+  
+  
+  
+
+},
+
+card2: {
+  
+  width: "100%",
+  height: 200,
+  alignItems:"center",
+  backgroundColor: "#ffffff",
+  margin: 50,
+  justifyContent: "center",
+
+  
+},
+minicard1: {
+  width: 40,
+  heigh: 40,
+  backgroundColor: "#000000",
+
+
+}
+
+
+})
